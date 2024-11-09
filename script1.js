@@ -1,10 +1,10 @@
 let countdownInterval;
 
 // Set the target date and time (YYYY-MM-DDTHH:MM:SS)
-// const targetDate = new Date("2024-12-18T00:00:00").getTime(); // Set target date to 18th December 2024 at 00:00:00
+ const targetDate = new Date("2024-12-18T00:00:00").getTime(); // Set target date to 18th December 2024 at 00:00:00
 
 // Set the target date and time to 1 minute from now
-const targetDate = new Date(Date.now() + 1 * 60 * 1000).getTime(); // Set target date to 1 minute from now
+//const targetDate = new Date(Date.now() + 1 * 60 * 1000).getTime(); // Set target date to 1 minute from now
 
 
 function startCountdown() {
@@ -25,12 +25,12 @@ function startCountdown() {
         document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
 
         // If the countdown is finished, redirect to the wishes.html page
-        if (distance <= 0) {
+        if (distance = 0) {
             clearInterval(countdownInterval);
             window.location.href = "https://insightsalpha.github.io/BirthaDay_Wishes/"; // Redirect to the wishes page
             // document.getElementById('message').innerHTML = "Countdown finished!";
         }
-    }, 1000);
+    }, 100);
 }
 
 // Automatically start the countdown when the page loads
