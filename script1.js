@@ -25,12 +25,10 @@ function startCountdown() {
         document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
 
         // If the countdown is finished, redirect to the wishes.html page
-        if (distance = 0) {
-     
+       if (distance <= 0) {
+            clearInterval(countdownInterval);
             window.location.href = "https://insightsalpha.github.io/BirthaDay_Wishes/"; // Redirect to the wishes page
             // document.getElementById('message').innerHTML = "Countdown finished!";
-           clearInterval(countdownInterval);
-         
         }
     }, 1000);
 }
