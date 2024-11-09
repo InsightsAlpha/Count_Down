@@ -27,7 +27,7 @@ function startCountdown() {
         // If the countdown is finished, redirect to the wishes.html page
         if (distance <= 0) {
             clearInterval(countdownInterval);
-            window.location.href = "http://localhost:8000/wishes.html";; // Redirect to the wishes page
+            window.location.href = "https://insightsalpha.github.io/BirthaDay_Wishes/"; // Redirect to the wishes page
             // document.getElementById('message').innerHTML = "Countdown finished!";
         }
     }, 1000);
