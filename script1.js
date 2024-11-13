@@ -1,7 +1,7 @@
 let countdownInterval;
 
 // Set the target date and time (YYYY-MM-DDTHH:MM:SS)
-const targetDate = new Date("2024-12-14T00:00:00").getTime(); // Set target date to 18th December 2024 at 00:00:00
+const targetDate = new Date("2024-11-14T00:00:00").getTime(); // Set target date to 18th December 2024 at 00:00:00
 
 // Set the target date and time to 1 minute from now
 //const targetDate = new Date(Date.now() + 1 * 60 * 1000).getTime(); // Set target date to 1 minute from now
